@@ -1,0 +1,187 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.neon-text {
+  background: linear-gradient(to right, #00c6ff, #4a00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.border-dashed {
+  border-style: dashed;
+}
+
+/* Botão minimalista */
+.button-minimal {
+  border: 1px solid #00c6ff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: transparent;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.button-minimal:hover {
+  background: #00c6ff;
+  color: #000000;
+}
+#tsparticles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none; /* important to allow clicks to pass through */
+}
+.animated-gradient {
+  background: linear-gradient(270deg, #00c6ff, #4a00e0, #00c6ff);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.animated-gradient {
+  background: linear-gradient(270deg, #00c6ff, #4a00e0, #00c6ff);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+  background-repeat: no-repeat;
+}
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 1s ease-out forwards;
+}
+
+.animate-bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+/* --- Botões Premium --- */
+.button-neon {
+  background: linear-gradient(to right, #00c6ff, #4a00e0);
+  color: white;
+  padding: 12px 28px;
+  font-weight: bold;
+  border-radius: 9999px;
+  box-shadow: 0 0 10px rgba(0, 198, 255, 0.5), 0 0 20px rgba(74, 0, 224, 0.5);
+  transition: all 0.3s ease;
+}
+
+.button-neon:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 198, 255, 0.7), 0 0 40px rgba(74, 0, 224, 0.7);
+}
+
+/* --- Cards Premium --- */
+.card-neon {
+  background: rgba(0, 0, 30, 0.7);
+  border: 1px solid rgba(0, 198, 255, 0.2);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  padding: 24px;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 30px rgba(0, 198, 255, 0.1);
+}
+
+.card-neon:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 198, 255, 0.4);
+}
+
+/* --- Tipografia Atualizada --- */
+.title-text {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: white; /* Texto branco sólido */
+}
+
+.subtitle-text {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #cbd5e1; /* Cinza muito claro */
+  line-height: 1.8;
+  max-width: 600px;
+}
+
+/* --- Animação Suave no Scroll --- */
+.fade-up {
+  animation: fade-up 1s ease forwards;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.button-solid {
+  background-color: #00c6ff; /* azul sólido neon */
+  color: white;
+  padding: 12px 24px;
+  font-weight: bold;
+  border: 2px solid #00c6ff;
+  border-radius: 9999px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 198, 255, 0.4);
+}
+
+.button-solid:hover {
+  background-color: transparent;
+  color: #00c6ff;
+  box-shadow: 0 0 20px rgba(0, 198, 255, 0.6);
+  border-color: #00c6ff;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
