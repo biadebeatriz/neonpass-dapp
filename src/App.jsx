@@ -148,7 +148,7 @@ export default function App() {
             ) : (
               <div className="flex flex-col items-center fade-in">
                 <img
-                  src="src/assets/locked-placeholder.png"
+                  src="locked-placeholder.png"
                   alt="Locked NeonPass"
                   className="w-64 h-64 object-cover rounded-lg shadow-lg border-2 border-gray-600"
                 />
